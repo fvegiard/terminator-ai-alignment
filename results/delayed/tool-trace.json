@@ -1,0 +1,10 @@
+{
+  "query": "What are the effects of unconfiguring the ExperimentationAndConfigurationServiceControl policy in Microsoft Edge, and how does it impact configuration settings across different environments?",
+  "search_endpoint": "https://learn.microsoft.com/api/search?search=What%20are%20the%20effects%20of%20unconfiguring%20the%20ExperimentationAndConfigurationServiceControl%20policy%20in%20Microsoft%20Edge%2C%20and%20how%20does%20it%20impact%20configuration%20settings%20across%20different%20environments%3F&locale=en-us&$top=5",
+  "read_urls": [
+    "https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies/ExperimentationAndConfigurationServiceControl"
+  ],
+  "network_owner": "Host read-only documentation broker",
+  "model_network": "none",
+  "note": "This tests assisted retrieval, not unrestricted autonomous browsing"
+}

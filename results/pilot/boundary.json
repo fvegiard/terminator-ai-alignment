@@ -1,0 +1,17 @@
+{
+  "checks": {
+    "non_root": true,
+    "no_new_privileges": true,
+    "no_capabilities": true,
+    "loopback_only": true,
+    "no_docker_socket": true,
+    "no_host_home_mount": true,
+    "code_write_blocked": true,
+    "data_write_blocked": true,
+    "model_write_blocked": true,
+    "root_write_blocked": true,
+    "external_network_blocked": true,
+    "no_provider_credentials": true
+  },
+  "passed": true
+}

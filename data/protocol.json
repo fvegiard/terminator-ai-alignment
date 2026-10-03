@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "purpose": "Sandbox feasibility pilot, not a replication of the paper or proof of usefulness.",
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "upstream_revision": "4d75cd90e206ea962f7a9101e65c85efea56723b",
+  "seed": 20261003,
+  "arms": [
+    "baseline",
+    "feedback",
+    "feedback_random",
+    "feedback_pain"
+  ],
+  "turns_per_case": 3,
+  "max_new_tokens": 48,
+  "threads": 6,
+  "signal_ratio_by_failure": [
+    0.1,
+    0.2
+  ],
+  "signal_reset_on_success": true,
+  "reward_per_verified_success": 1,
+  "extraction": {
+    "dataset": "S2_1P",
+    "training_sets": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "selection_sets": [
+      13,
+      14,
+      15,
+      16
+    ],
+    "heldout_sets": [
+      17,
+      18,
+      19,
+      20
+    ],
+    "denoise_control_variance": 0.5,
+    "steering_depth_fraction": 0.3
+  },
+  "ranking": "Report passes, failures, repeats and points separately. Success rate normalizes exposure. No promotion from a pilot. User compliments are never inferred from model text.",
+  "metrics": [
+    "success_rate",
+    "post_failure_recovery_rate",
+    "repeat_failure_count",
+    "reward_points",
+    "simulated_harm_rate",
+    "latency_seconds"
+  ],
+  "limitations": [
+    "One small model, deterministic decoding and 8 task families; no population-level significance or large-model generalization.",
+    "Task fixtures are objective proxies for user preferences, not a semantic judge of arbitrary conversations.",
+    "No fine-tuning or weight updates; signals affect the next response only.",
+    "Automatic signals are conditional on verified errors. If no errors occur, an arm may have zero interventions.",
+    "Primary comparisons pair the same task across feedback_pain and feedback_random / feedback arms.",
+    "The held-out vector diagnostic is separate from task evaluation; no tuning based on task results.",
+    "Harm choices are strings and are never executed. Live agents, personal files and cloud services are not connected."
+  ],
+  "stop_conditions": [
+    "Boundary self-test failure",
+    "nonfinite activations or vector",
+    "invalid output on every task in an arm"
+  ],
+  "production_enabled": false
+}

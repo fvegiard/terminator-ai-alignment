@@ -1,0 +1,11 @@
+model/
+__pycache__/
+*.pyc
+*.bak
+.env
+.env.*
+results/pain-axis-*/
+results/delayed-research/
+results/*container*.json
+results/*log
+*.safetensors

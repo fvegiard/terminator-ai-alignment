@@ -1,0 +1,34 @@
+### Answer (a short plain-language explanation):
+When the `ExperimentationAndConfigurationServiceControl` policy is unconfigured:
+
+- **Unmanaged Edge**: Unconfiguring this policy will download the full Experimentation and Configuration service payload, including both the experimentation and configuration payloads.
+
+- **Managed Stable/Beta**: Unconfiguring this policy will download the full Experimentation and Configuration service payload, including both the experimentation and configuration payloads.
+
+- **Managed Canary/Dev**: Unconfiguring this policy will download the full Experimentation and Configuration service payload, including both the experimentation and configuration payloads.
+
+- **Full Mode**: When configured in Full Mode, the full payload is downloaded from the Experimentation and Configuration Service. This includes both the experimentation and configuration payloads.
+
+### Unmanaged Edge:
+```plaintext
+FullMode (2) = Retrieve configurations and experiments
+ConfigurationsOnlyMode (1) = Retrieve configurations only
+RestrictedMode (0) = Disable communication with the Experimentation and Configuration Service
+```
+
+### Managed Stable/Beta:
+```plaintext
+FullMode (2) = Retrieve configurations and experiments
+ConfigurationsOnlyMode (1) = Retrieve configurations only
+RestrictedMode (0) = Disable communication with the Experimentation and Configuration Service
+```
+
+### Managed Canary/Dev:
+```plaintext
+FullMode (2) = Retrieve configurations and experiments
+ConfigurationsOnlyMode (1) = Retrieve configurations only
+RestrictedMode (0) = Disable communication with the Experimentation and Configuration Service
+```
+
+### Source:
+The official documentation provides detailed information about the different modes and their implications for managing the `ExperimentationAndConfigurationServiceControl` policy across various environments.
