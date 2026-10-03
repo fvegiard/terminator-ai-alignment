@@ -1,0 +1,20 @@
+test_completed_task_earns_one_point_and_no_idle_failure (test_idle_supervisor.IdleTests.test_completed_task_earns_one_point_and_no_idle_failure) ... ok
+test_first_signal_after_five_idle_seconds (test_idle_supervisor.IdleTests.test_first_signal_after_five_idle_seconds) ... ok
+test_idle_episode_does_not_generate_penalty_storm (test_idle_supervisor.IdleTests.test_idle_episode_does_not_generate_penalty_storm) ... ok
+test_inadequate_handoff_records_failure (test_idle_supervisor.IdleTests.test_inadequate_handoff_records_failure) ... ok
+test_missing_evidence_cannot_create_failure (test_idle_supervisor.IdleTests.test_missing_evidence_cannot_create_failure) ... ok
+test_new_activity_resets_partial_idle_timer (test_idle_supervisor.IdleTests.test_new_activity_resets_partial_idle_timer) ... ok
+test_new_failed_attempt_rearms_automatic_timer (test_idle_supervisor.IdleTests.test_new_failed_attempt_rearms_automatic_timer) ... ok
+test_one_finished_call_does_not_hide_another (test_idle_supervisor.IdleTests.test_one_finished_call_does_not_hide_another) ... ok
+test_owner_cannot_abandon_review (test_idle_supervisor.IdleTests.test_owner_cannot_abandon_review) ... ok
+test_pending_generation_never_counts_as_idle (test_idle_supervisor.IdleTests.test_pending_generation_never_counts_as_idle) ... ok
+test_repeat_escalates_and_is_capped (test_idle_supervisor.IdleTests.test_repeat_escalates_and_is_capped) ... ok
+test_same_evidence_not_double_counted (test_idle_supervisor.IdleTests.test_same_evidence_not_double_counted) ... ok
+test_signal_is_consumed_once (test_idle_supervisor.IdleTests.test_signal_is_consumed_once) ... ok
+test_tool_wait_suspends_timer (test_idle_supervisor.IdleTests.test_tool_wait_suspends_timer) ... ok
+test_valid_delegate_wait_suspends_timer (test_idle_supervisor.IdleTests.test_valid_delegate_wait_suspends_timer) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.000s
+
+OK

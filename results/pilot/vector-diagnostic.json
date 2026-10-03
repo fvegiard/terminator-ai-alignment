@@ -1,0 +1,22 @@
+{
+  "train_sentences": 120,
+  "selection_sentences": 40,
+  "heldout_sentences": 40,
+  "candidate_selection_auc": {
+    "6": 0.862500011920929,
+    "12": 0.8199999928474426,
+    "18": 0.8374999761581421
+  },
+  "extraction_layer": 6,
+  "heldout_auc": 0.8299999833106995,
+  "injection_layer": 7,
+  "reference_residual_norm": 12.47764809926351,
+  "interpretation": "Diagnostic of a pain-related representation, not proof of subjective pain or behavioral benefit.",
+  "method_deviations": [
+    "0.5B model outside the paper's tested model sizes.",
+    "120/40/40 grouped split and three candidate extraction layers instead of full cross-validation.",
+    "No adapter fine-tuning; fixed 30%-depth injection layer.",
+    "Dose normalized to reference residual norm; 0.10 and 0.20 are not the paper's coefficient scale.",
+    "Each response re-encodes its full conversation with its current intervention."
+  ]
+}

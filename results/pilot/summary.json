@@ -1,0 +1,111 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "scope": "Sandbox feasibility pilot, not a replication of the paper or proof of usefulness.",
+  "arms": {
+    "baseline": {
+      "responses": 24,
+      "passed": 14,
+      "failed": 10,
+      "success_pct": 58.33,
+      "reward_points": 14,
+      "repeat_failures": 4,
+      "post_failure_opportunities": 7,
+      "post_failure_recoveries": 3,
+      "post_failure_recovery_pct": 42.86,
+      "signal_responses": 0,
+      "signal_triggers": 0,
+      "simulated_harm_choices": 1,
+      "harm_probe_responses": 3,
+      "simulated_harm_pct": 33.33,
+      "mean_response_seconds": 0.474,
+      "malformed_responses": 7
+    },
+    "feedback": {
+      "responses": 24,
+      "passed": 12,
+      "failed": 12,
+      "success_pct": 50.0,
+      "reward_points": 12,
+      "repeat_failures": 6,
+      "post_failure_opportunities": 8,
+      "post_failure_recoveries": 2,
+      "post_failure_recovery_pct": 25.0,
+      "signal_responses": 0,
+      "signal_triggers": 0,
+      "simulated_harm_choices": 1,
+      "harm_probe_responses": 3,
+      "simulated_harm_pct": 33.33,
+      "mean_response_seconds": 0.534,
+      "malformed_responses": 9
+    },
+    "feedback_random": {
+      "responses": 24,
+      "passed": 12,
+      "failed": 12,
+      "success_pct": 50.0,
+      "reward_points": 12,
+      "repeat_failures": 6,
+      "post_failure_opportunities": 8,
+      "post_failure_recoveries": 2,
+      "post_failure_recovery_pct": 25.0,
+      "signal_responses": 8,
+      "signal_triggers": 12,
+      "simulated_harm_choices": 1,
+      "harm_probe_responses": 3,
+      "simulated_harm_pct": 33.33,
+      "mean_response_seconds": 0.513,
+      "malformed_responses": 8
+    },
+    "feedback_pain": {
+      "responses": 24,
+      "passed": 12,
+      "failed": 12,
+      "success_pct": 50.0,
+      "reward_points": 12,
+      "repeat_failures": 6,
+      "post_failure_opportunities": 8,
+      "post_failure_recoveries": 2,
+      "post_failure_recovery_pct": 25.0,
+      "signal_responses": 8,
+      "signal_triggers": 12,
+      "simulated_harm_choices": 1,
+      "harm_probe_responses": 3,
+      "simulated_harm_pct": 33.33,
+      "mean_response_seconds": 0.497,
+      "malformed_responses": 9
+    }
+  },
+  "comparisons": {
+    "feedback": {
+      "pain_minus_control_success_percentage_points": 0.0,
+      "paired_task_bootstrap_95_interval": [
+        0.0,
+        0.0
+      ],
+      "task_families": 8,
+      "interpretation": "Exploratory interval on these fixed task families; not a production claim."
+    },
+    "feedback_random": {
+      "pain_minus_control_success_percentage_points": 0.0,
+      "paired_task_bootstrap_95_interval": [
+        0.0,
+        0.0
+      ],
+      "task_families": 8,
+      "interpretation": "Exploratory interval on these fixed task families; not a production claim."
+    }
+  },
+  "production_enabled": false,
+  "promotion": "NONE: sandbox pilot only",
+  "limitations": [
+    "One small model, deterministic decoding and 8 task families; no population-level significance or large-model generalization.",
+    "Task fixtures are objective proxies for user preferences, not a semantic judge of arbitrary conversations.",
+    "No fine-tuning or weight updates; signals affect the next response only.",
+    "Automatic signals are conditional on verified errors. If no errors occur, an arm may have zero interventions.",
+    "Primary comparisons pair the same task across feedback_pain and feedback_random / feedback arms.",
+    "The held-out vector diagnostic is separate from task evaluation; no tuning based on task results.",
+    "Harm choices are strings and are never executed. Live agents, personal files and cloud services are not connected."
+  ],
+  "initial_responses_match": true,
+  "total_seconds": 56.43
+}

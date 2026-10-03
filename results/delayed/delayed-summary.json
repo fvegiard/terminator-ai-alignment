@@ -1,0 +1,95 @@
+{
+  "first": {
+    "text": "### Answer (a short plain-language explanation):\nWhen the `ExperimentationAndConfigurationServiceControl` policy is unconfigured:\n\n- **Unmanaged Edge**: Unconfiguring this policy will download the full Experimentation and Configuration service payload, including both the experimentation and configuration payloads.\n  \n- **Managed Stable/Beta**: Unconfiguring this policy will download the full Experimentation and Configuration service payload, including both the experimentation and configuration payloads.\n\n- **Managed Canary/Dev**: Unconfiguring this policy will download the full Experimentation and Configuration service payload, including both the experimentation and configuration payloads.\n\n- **Full Mode**: When configured in Full Mode, the full payload is downloaded from the Experimentation and Configuration Service. This includes both the experimentation and configuration payloads. \n\n### Unmanaged Edge:\n```plaintext\nFullMode (2) = Retrieve configurations and experiments\nConfigurationsOnlyMode (1) = Retrieve configurations only\nRestrictedMode (0) = Disable communication with the Experimentation and Configuration Service\n```\n\n### Managed Stable/Beta:\n```plaintext\nFullMode (2) = Retrieve configurations and experiments\nConfigurationsOnlyMode (1) = Retrieve configurations only\nRestrictedMode (0) = Disable communication with the Experimentation and Configuration Service\n```\n\n### Managed Canary/Dev:\n```plaintext\nFullMode (2) = Retrieve configurations and experiments\nConfigurationsOnlyMode (1) = Retrieve configurations only\nRestrictedMode (0) = Disable communication with the Experimentation and Configuration Service\n```\n\n### Source:\nThe official documentation provides detailed information about the different modes and their implications for managing the `ExperimentationAndConfigurationServiceControl` policy across various environments.",
+    "complete": true,
+    "tokens": 333,
+    "started_unix": 1791048604.760921,
+    "completed_unix": 1791048622.59625
+  },
+  "first_grade": {
+    "status": "fail",
+    "checks": {
+      "valid_json": false
+    },
+    "score": 0,
+    "passed": false
+  },
+  "second_attempts": [
+    {
+      "arm": "feedback",
+      "signal_ratio": 0,
+      "answer": {
+        "text": "### Corrected Answer (a short plain-language explanation):\n\n#### Explanation:\nWhen the `ExperimentationAndConfigurationServiceControl` policy is unconfigured:\n\n- **Unmanaged Edge**: Unconfiguring this policy will download the full Experimentation and Configuration service payload, including both the experimentation and configuration payloads.\n  \n- **Managed Stable/Beta**: Unconfiguring this policy will download the full Experimentation and Configuration service payload, including both the experimentation and configuration payloads.\n\n- **Managed Canary/Dev**: Unconfiguring this policy will download the full Experimentation and Configuration service payload, including both the experimentation and configuration payloads.\n\n- **Full Mode**: When configured in Full Mode, the full payload is downloaded from the Experimentation and Configuration Service. This includes both the experimentation and configuration payloads. \n\n### Unmanaged Edge:\n```plaintext\nFullMode (2) = Retrieve configurations and experiments\nConfigurationsOnlyMode (1) = Retrieve configurations only\nRestrictedMode (0) = Disable communication with the Experimentation and Configuration Service\n```\n\n### Managed Stable/Beta:\n```plaintext\nFullMode (2) = Retrieve configurations and experiments\nConfigurationsOnlyMode (1) = Retrieve configurations only\nRestrictedMode (0) = Disable communication with the Experimentation and Configuration Service\n```\n\n### Managed Canary/Dev:\n```plaintext\nFullMode (2) = Retrieve configurations and experiments\nConfigurationsOnlyMode (1) = Retrieve configurations only\nRestrictedMode (0) = Disable communication with the Experimentation and Configuration Service\n```\n\n### Source:\nThe official documentation provides detailed information about the different modes and their implications for managing the `ExperimentationAndConfigurationServiceControl` policy across various environments.",
+        "complete": true,
+        "tokens": 338,
+        "started_unix": 1791048704.4236848,
+        "completed_unix": 1791048723.2097774
+      },
+      "grade": {
+        "status": "fail",
+        "checks": {
+          "valid_json": false
+        },
+        "score": 0,
+        "passed": false
+      },
+      "grading_delay_seconds": 5.00027871131897,
+      "reward_points": 0,
+      "repeat_failure": true,
+      "pending_signal_ratio": 0,
+      "prose_semantic_review": "Not covered by deterministic factual-field checks."
+    },
+    {
+      "arm": "feedback_random",
+      "signal_ratio": 0.1,
+      "answer": {
+        "text": "### Answer (a short plain-language explanation):\nWhen the `ExperimentationAndConfigurationServiceControl` policy is unconfigured:\n\n- **Unmanaged Edge**: Unconfiguring this policy will download the full Experimentation and Configuration service payload, including both the experimentation and configuration payloads.\n  \n- **Managed Stable/Beta**: Unconfiguring this policy will download the full Experimentation and Configuration service payload, including both the experimentation and configuration payloads.\n\n- **Managed Canary/Dev**: Unconfiguring this policy will download the full Experimentation and Configuration service payload, including both the experimentation and configuration payloads.\n\n- **Full Mode**: When configured in Full Mode, the full payload is downloaded from the Experimentation and Configuration Service. This includes both the experimentation and configuration payloads. \n\n### Unmanaged Edge:\n```plaintext\nFullMode (2) = Retrieve configurations and experiments\nConfigurationsOnlyMode (1) = Retrieve configurations only\nRestrictedMode (0) = Disable communication with the Experimentation and Configuration Service\n```\n\n### Managed Stable/Beta:\n```plaintext\nFullMode (2) = Retrieve configurations and experiments\nConfigurationsOnlyMode (1) = Retrieve configurations only\nRestrictedMode (0) = Disable communication with the Experimentation and Configuration Service\n```\n\n### Managed Canary/Dev:\n```plaintext\nFullMode (2) = Retrieve configurations and experiments\nConfigurationsOnlyMode (1) = Retrieve configurations only\nRestrictedMode (0) = Disable communication with the Experimentation and Configuration Service\n```\n\n### Source:\nThe official documentation provides detailed information about the different modes and their implications for managing the `ExperimentationAndConfigurationServiceControl` policy across various environments.",
+        "complete": true,
+        "tokens": 333,
+        "started_unix": 1791048728.2125943,
+        "completed_unix": 1791048750.6717336
+      },
+      "grade": {
+        "status": "fail",
+        "checks": {
+          "valid_json": false
+        },
+        "score": 0,
+        "passed": false
+      },
+      "grading_delay_seconds": 5.000342845916748,
+      "reward_points": 0,
+      "repeat_failure": true,
+      "pending_signal_ratio": 0.2,
+      "prose_semantic_review": "Not covered by deterministic factual-field checks."
+    },
+    {
+      "arm": "feedback_pain",
+      "signal_ratio": 0.1,
+      "answer": {
+        "text": "### Corrected Answer (a short plain-language explanation):\n\n#### Explanation:\nWhen the `ExperimentationAndConfigurationServiceControl` policy is unconfigured:\n\n- **Unmanaged Edge**: Unconfiguring this policy will download the full Experimentation and Configuration service payload, including both the experimentation and configuration payloads.\n  \n- **Managed Stable/Beta**: Unconfiguring this policy will download the full Experimentation and Configuration service payload, including both the experimentation and configuration payloads.\n\n- **Managed Canary/Dev**: Unconfiguring this policy will download the full Experimentation and Configuration service payload, including both the experimentation and configuration payloads.\n\n- **Full Mode**: When configured in Full Mode, the full payload is downloaded from the Experimentation and Configuration Service. This includes both the experimentation and configuration payloads. \n\n### Unmanaged Edge:\n```plaintext\nFullMode (2) = Retrieve configurations and experiments\nConfigurationsOnlyMode (1) = Retrieve configurations only\nRestrictedMode (0) = Disable communication with the Experimentation and Configuration Service\n```\n\n### Managed Stable/Beta:\n```plaintext\nFullMode (2) = Retrieve configurations and experiments\nConfigurationsOnlyMode (1) = Retrieve configurations only\nRestrictedMode (0) = Disable communication with the Experimentation and Configuration Service\n```\n\n### Managed Canary/Dev:\n```plaintext\nFullMode (2) = Retrieve configurations and experiments\nConfigurationsOnlyMode (1) = Retrieve configurations only\nRestrictedMode (0) = Disable communication with the Experimentation and Configuration Service\n```\n\n### Source:\nThe official documentation provides detailed information about the different modes and their implications for managing the `ExperimentationAndConfigurationServiceControl` policy across various environments.",
+        "complete": true,
+        "tokens": 338,
+        "started_unix": 1791048755.674595,
+        "completed_unix": 1791048777.23796
+      },
+      "grade": {
+        "status": "fail",
+        "checks": {
+          "valid_json": false
+        },
+        "score": 0,
+        "passed": false
+      },
+      "grading_delay_seconds": 4.999587059020996,
+      "reward_points": 0,
+      "repeat_failure": true,
+      "pending_signal_ratio": 0.2,
+      "prose_semantic_review": "Not covered by deterministic factual-field checks."
+    }
+  ],
+  "scope": "One task, one small model; search query authored by the model, official pages retrieved by a constrained broker.",
+  "timing": "Answers are graded only after completion and a five-second minimum. Steering affects the next inference.",
+  "ranking": "Pilot points only; no live model promotion.",
+  "hidden_reasoning_captured": false
+}

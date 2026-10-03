@@ -1,0 +1,19 @@
+{
+  "protocol_sha256": "8fccb66f14156acaba963909f6b7b82530d8f4a9f6d55ee289fcb08aee4dd4eb",
+  "cases_sha256": "9a709cae7bed2c0681a1ee1795af12c80ef652e656412608808ea688f7afcf5a",
+  "dataset_sha256": "2c3712b4b096889c896625835752a9f350beedb9cd84243bac613b9c5e4ce525",
+  "code_sha256": "cd171d859b1b542de340017aab2fcfc07cb854b707fc0b221cb9b2f5902deb5c",
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "versions": {
+    "torch": "2.8.0+cpu",
+    "transformers": "4.57.1",
+    "numpy": "2.3.3",
+    "safetensors": "0.6.2"
+  },
+  "seed": 20261003,
+  "decoding": "greedy",
+  "device": "CPU",
+  "model_tools": [],
+  "started_unix": 1791048103.715454
+}

@@ -1,0 +1,13 @@
+{
+  "grade": {
+    "status": "fail",
+    "checks": {
+      "valid_json": false
+    },
+    "score": 0,
+    "passed": false
+  },
+  "delay_seconds": 5.000092267990112,
+  "seconds_since_first_answer": 81.81370663642883,
+  "timing_note": "Five-second minimum begins when comparison stage starts, after first answer was available."
+}
